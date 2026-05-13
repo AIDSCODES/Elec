@@ -1,0 +1,29 @@
+def f(x):
+    return x**3-4*x-9
+a=2
+b=3
+n=9
+if f(a)*f(b)>= 0:
+    print("Regula Falsi Method Not Satisfied,Operation Stopped")
+    none,0
+else:
+    for i in range(n):
+        c = (a*f(b)-b*f(a))/(f(b)-f(a))
+        print(f"Iteration {i+1} :c = {c}, f(c)={f(c)}")
+        if f(c)==0:
+            break
+        elif f(a)*f(c)<0:
+            b=c
+        else:
+            a=c
+====================== RESTART: D:\Experiment 2\Regula Falsi.py 
+=====================
+Iteration 1 :c = 2.6, f(c)=-1.8239999999999998
+Iteration 2 :c = 2.6932515337423317, f(c)=-0.23722651080747958
+Iteration 3 :c = 2.7049183969257933, f(c)=-0.02891218386757366
+Iteration 4 :c = 2.706333486962574, f(c)=-0.003495418160724739
+Iteration 5 :c = 2.706504468564353, f(c)=-0.0004221758616669291
+Iteration 6 :c = 2.706525118232868, f(c)=-5.098429717520503e-05
+Iteration 7 :c = 2.7065276119801087, f(c)=-6.157058631828249e-06
+Iteration 8 :c = 2.7065279131342495, f(c)=-7.43548660864235e-07
+Iteration 9 :c = 2.706527949502708, f(c)=-8.979360544003612e-08
