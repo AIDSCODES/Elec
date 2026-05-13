@@ -1,0 +1,29 @@
+def f(x):
+    return x**3-4*x-9
+a=2
+b=3
+n=9
+if f(a)*f(b)>= 0:
+    print("Bisection Method Not satisfied,Operation Stopped")
+    none,0
+else:
+    for i in range(n):
+        c = (a + b) / 2
+        print(f"Iteration {i+1} :c = {c}, f(c)={f(c)}")
+        if f(c)==0:
+            break
+        elif f(a)*f(c)<0:
+            b=c
+        else:
+            a=c
+======================= RESTART: E:\Experiment 2\Bisection Method.py 
+=======================
+Iteration 1 :c = 2.5, f(c)=-3.375
+Iteration 2 :c = 2.75, f(c)=0.796875
+Iteration 3 :c = 2.625, f(c)=-1.412109375
+Iteration 4 :c = 2.6875, f(c)=-0.339111328125
+Iteration 5 :c = 2.71875, f(c)=0.220916748046875
+Iteration 6 :c = 2.703125, f(c)=-0.061077117919921875
+Iteration 7 :c = 2.7109375, f(c)=0.07942342758178711
+Iteration 8 :c = 2.70703125, f(c)=0.00904923677444458
+Iteration 9 :c = 2.705078125, f(c)=-0.026044897735118866
