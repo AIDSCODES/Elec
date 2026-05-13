@@ -1,0 +1,28 @@
+while True:
+x=float(input("Enter the Value:"))
+d=int(input("Number of Decimal Places: "))
+y=round(x, d)
+error=abs(x-y)
+re=(error/x)
+percentage_of_re=(re*100)
+print(error)
+print(re)
+print(percentage_of_re)
+======================= RESTART: D:\Experiment 1\round off.py 
+=======================
+Enter the Value:12.356547756
+Number of Decimal Places: 4
+4.775599999895519e-05
+3.864833523244079e-06
+0.0003864833523244079
+Enter the Value:1236.574785787
+Number of Decimal Places: 5
+4.212999783703708e-06
+3.4069914995253647e-09
+3.4069914995253647e-07
+Enter the Value:452.3124
+Number of Decimal Places: 2
+0.0024000000000228283
+5.306067222616113e-06
+0.0005306067222616113
+Enter the Value:
